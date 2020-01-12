@@ -1,0 +1,34 @@
+{
+  "name": "lula-server",
+  "version": "0.1.0",
+  "description": "Lula-server is an experimental server to access Redis keys with role-based access control.",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_CONFIG_ENV=testing jest --runInBand",
+    "start": "node index.js",
+    "start:dev": "NODE_ENV=development node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:evanx/lula-server.git"
+  },
+  "keywords": [
+    "Redis"
+  ],
+  "author": "Evan Summers",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "config": "^3.2.2",
+    "fastify": "^2.7.1",
+    "fastify-bearer-auth": "^4.2.0",
+    "fastify-formbody": "^3.1.0",
+    "fastify-redis": "^3.1.1",
+    "lodash": "^4.17.15",
+    "node-fetch": "^2.6.0",
+    "pino-pretty": "^3.2.0"
+  }
+}
